@@ -1,0 +1,1151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Book</string>
+            <string>Avenir-Light</string>
+            <string>Avenir-Medium</string>
+        </array>
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Bold</string>
+        </array>
+        <array key="IHATCS__.TTF">
+            <string>IhateComicSans</string>
+        </array>
+        <array key="TimesNewRoman.ttf">
+            <string>TimesNewRomanPSMT</string>
+        </array>
+        <array key="TimesNewRomanBold.ttf">
+            <string>TimesNewRomanPS-BoldMT</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Sign InVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SignInVC" customModule="IlacRehberim" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Br9-Hf-KGK" customClass="ViewDesign" customModule="IlacRehberim" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- İlaç Rehberim -" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P61-cX-tpk">
+                                        <rect key="frame" x="71" y="56" width="233" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="DVN-aN-x7C"/>
+                                            <constraint firstAttribute="width" constant="233" id="jTc-MG-Aw0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="IhateComicSans" family="I hate Comic Sans" pointSize="29"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.011764705882352941" green="0.66274509803921566" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="P61-cX-tpk" secondAttribute="bottom" constant="30" id="OAl-b4-uOe"/>
+                                    <constraint firstItem="P61-cX-tpk" firstAttribute="centerX" secondItem="Br9-Hf-KGK" secondAttribute="centerX" id="WvU-hY-tyk"/>
+                                    <constraint firstAttribute="height" constant="120" id="oLn-Va-tle"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-ambulance-filled-500" translatesAutoresizingMaskIntoConstraints="NO" id="AY9-z5-fWp">
+                                <rect key="frame" x="123" y="160" width="128" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="5BO-vX-Imj"/>
+                                    <constraint firstAttribute="height" constant="128" id="bjn-1K-sAW"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="tyt-wC-TzN">
+                                <rect key="frame" x="35" y="318" width="305" height="162"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="svf-Eb-quj">
+                                        <rect key="frame" x="0.0" y="0.0" width="305" height="69"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FXP-PZ-vWo">
+                                                <rect key="frame" x="0.0" y="0.0" width="305" height="29"/>
+                                                <fontDescription key="fontDescription" name="IhateComicSans" family="I hate Comic Sans" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TJo-Jf-cHk" customClass="FieldDesign" customModule="IlacRehberim" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="39" width="305" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" enablesReturnKeyAutomatically="YES" textContentType="email"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="TJo-Jf-cHk" secondAttribute="trailing" id="7N8-kX-QgC"/>
+                                            <constraint firstItem="FXP-PZ-vWo" firstAttribute="leading" secondItem="svf-Eb-quj" secondAttribute="leading" id="OmU-Ge-ND6"/>
+                                            <constraint firstAttribute="trailing" secondItem="FXP-PZ-vWo" secondAttribute="trailing" id="XnD-MX-pPi"/>
+                                            <constraint firstItem="TJo-Jf-cHk" firstAttribute="leading" secondItem="svf-Eb-quj" secondAttribute="leading" id="vZk-t6-0H2"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="elJ-1K-pUN">
+                                        <rect key="frame" x="0.0" y="93" width="305" height="69"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WG3-fD-Bo8">
+                                                <rect key="frame" x="0.0" y="0.0" width="305" height="29"/>
+                                                <fontDescription key="fontDescription" name="IhateComicSans" family="I hate Comic Sans" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CCf-oN-aQD" customClass="FieldDesign" customModule="IlacRehberim" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="39" width="305" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="WG3-fD-Bo8" secondAttribute="trailing" id="245-qQ-qc2"/>
+                                            <constraint firstItem="WG3-fD-Bo8" firstAttribute="leading" secondItem="elJ-1K-pUN" secondAttribute="leading" id="Npo-xT-fBJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="CCf-oN-aQD" secondAttribute="trailing" id="aLm-fu-Z0O"/>
+                                            <constraint firstItem="CCf-oN-aQD" firstAttribute="leading" secondItem="elJ-1K-pUN" secondAttribute="leading" id="w2p-Sx-MdE"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="svf-Eb-quj" secondAttribute="trailing" id="5wb-Ms-o9z"/>
+                                    <constraint firstItem="elJ-1K-pUN" firstAttribute="leading" secondItem="tyt-wC-TzN" secondAttribute="leading" id="DXf-hG-RjN"/>
+                                    <constraint firstItem="svf-Eb-quj" firstAttribute="leading" secondItem="tyt-wC-TzN" secondAttribute="leading" id="NDp-z2-xlS"/>
+                                    <constraint firstAttribute="trailing" secondItem="elJ-1K-pUN" secondAttribute="trailing" id="Ref-gV-Wjo"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oeC-OW-fu3" customClass="ButtonDesign" customModule="IlacRehberim" customModuleProvider="target">
+                                <rect key="frame" x="61" y="520" width="253" height="63"/>
+                                <color key="backgroundColor" red="0.0039215686274509803" green="0.3411764705882353" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="YNa-sE-06a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="IhateComicSans" family="I hate Comic Sans" pointSize="27"/>
+                                <state key="normal" title="Giriş Yap">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="singInTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KCT-I3-ivs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w4G-C9-bfP">
+                                <rect key="frame" x="61" y="591" width="253" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="pKN-PY-Ut7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
+                                <state key="normal" title="Kayıt Ol !"/>
+                                <connections>
+                                    <segue destination="pBA-qy-Xyq" kind="show" id="JnI-zU-2AD"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f6V-5O-vLo">
+                                <rect key="frame" x="25" y="488" width="325" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="VM2-Dh-1YK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93400424718856812" green="0.96812176704406738" blue="0.99216234683990479" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="oeC-OW-fu3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="61" id="7BC-ot-hqg"/>
+                            <constraint firstItem="AY9-z5-fWp" firstAttribute="top" secondItem="Br9-Hf-KGK" secondAttribute="bottom" constant="40" id="7EK-X4-Fwh"/>
+                            <constraint firstItem="w4G-C9-bfP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="61" id="Bf8-4I-tor"/>
+                            <constraint firstItem="Br9-Hf-KGK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Gff-Wj-bfA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f6V-5O-vLo" secondAttribute="trailing" constant="25" id="K0G-TF-ayp"/>
+                            <constraint firstItem="Br9-Hf-KGK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LgA-S2-kZN"/>
+                            <constraint firstItem="Br9-Hf-KGK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="OAB-aP-iTE"/>
+                            <constraint firstItem="tyt-wC-TzN" firstAttribute="top" secondItem="AY9-z5-fWp" secondAttribute="bottom" constant="30" id="U1T-gW-YTy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tyt-wC-TzN" secondAttribute="trailing" constant="35" id="cb1-FH-jpZ"/>
+                            <constraint firstItem="AY9-z5-fWp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dEo-1r-QB8"/>
+                            <constraint firstItem="oeC-OW-fu3" firstAttribute="top" secondItem="tyt-wC-TzN" secondAttribute="bottom" constant="40" id="ePP-Nt-RZJ"/>
+                            <constraint firstItem="f6V-5O-vLo" firstAttribute="top" secondItem="tyt-wC-TzN" secondAttribute="bottom" constant="8" id="ey6-91-MZ1"/>
+                            <constraint firstItem="f6V-5O-vLo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="f3k-mJ-MPS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="w4G-C9-bfP" secondAttribute="trailing" constant="61" id="gbh-pD-fgn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oeC-OW-fu3" secondAttribute="trailing" constant="61" id="jy4-Uf-IfI"/>
+                            <constraint firstItem="w4G-C9-bfP" firstAttribute="top" secondItem="oeC-OW-fu3" secondAttribute="bottom" constant="8" id="osp-y6-I8s"/>
+                            <constraint firstItem="tyt-wC-TzN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="qZu-pl-Rkq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailField" destination="TJo-Jf-cHk" id="n1f-6F-fIe"/>
+                        <outlet property="errorLbl" destination="f6V-5O-vLo" id="E0b-F7-XpB"/>
+                        <outlet property="passwordField" destination="CCf-oN-aQD" id="kzz-dT-Xmz"/>
+                        <segue destination="cXs-4I-tXk" kind="show" identifier="goToIlacRehberim" id="lXe-Kx-wAK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="31.199999999999999" y="31.934032983508249"/>
+        </scene>
+        <!--FeedVC-->
+        <scene sceneID="0FB-UP-RsS">
+            <objects>
+                <viewController id="cXs-4I-tXk" customClass="FeedVC" customModule="IlacRehberim" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IPX-AT-fRF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PS7-o2-V4F" customClass="ViewDesign" customModule="IlacRehberim" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- İlaç Rehberim -" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6IX-hT-nQC">
+                                        <rect key="frame" x="71" y="41" width="233" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="moj-O0-sWO"/>
+                                            <constraint firstAttribute="width" constant="233" id="sWk-fa-3yT"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="IhateComicSans" family="I hate Comic Sans" pointSize="29"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Listem" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="geV-Iv-3eL">
+                                        <rect key="frame" x="71" y="85" width="233" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="ktf-L6-gvv"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="IhateComicSans" family="I hate Comic Sans" pointSize="23"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cib-we-6ut">
+                                        <rect key="frame" x="8" y="28" width="46" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="46" id="D2u-NH-S9N"/>
+                                            <constraint firstAttribute="height" constant="30" id="cz3-JP-Gj7"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="&lt;ÇIK">
+                                            <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="SignOutBtnTapped:" destination="cXs-4I-tXk" eventType="touchUpInside" id="JsX-i3-OpQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.29692286252975464" green="0.65153360366821289" blue="0.93337875604629517" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="cib-we-6ut" firstAttribute="top" secondItem="PS7-o2-V4F" secondAttribute="top" constant="28" id="0GY-lu-e4V"/>
+                                    <constraint firstAttribute="height" constant="120" id="Ooi-52-kOc"/>
+                                    <constraint firstItem="geV-Iv-3eL" firstAttribute="leading" secondItem="PS7-o2-V4F" secondAttribute="leading" constant="71" id="SdF-ih-BAb"/>
+                                    <constraint firstAttribute="trailing" secondItem="geV-Iv-3eL" secondAttribute="trailing" constant="71" id="Tdr-M0-JW8"/>
+                                    <constraint firstItem="geV-Iv-3eL" firstAttribute="top" secondItem="6IX-hT-nQC" secondAttribute="bottom" constant="10" id="gca-7u-cZO"/>
+                                    <constraint firstAttribute="bottom" secondItem="6IX-hT-nQC" secondAttribute="bottom" constant="45" id="jQt-4f-vAg"/>
+                                    <constraint firstItem="cib-we-6ut" firstAttribute="leading" secondItem="PS7-o2-V4F" secondAttribute="leading" constant="8" id="n2P-Jw-WeS"/>
+                                    <constraint firstItem="6IX-hT-nQC" firstAttribute="centerX" secondItem="PS7-o2-V4F" secondAttribute="centerX" id="q2h-Qc-WuQ"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Şu an almakta olduğum :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nVg-yF-MTb">
+                                <rect key="frame" x="20" y="128" width="236" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="SCH-oX-yxS"/>
+                                    <constraint firstAttribute="width" constant="236" id="xAn-E3-w9J"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="IhateComicSans" family="I hate Comic Sans" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8qQ-Tk-TaP">
+                                <rect key="frame" x="0.0" y="177" width="375" height="420"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MedicineCell" rowHeight="135" id="SZO-b5-A3i" customClass="MedicineCell" customModule="IlacRehberim" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="135"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SZO-b5-A3i" id="S4g-zL-lyj">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="134.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HON-Ul-la0" customClass="ViewDesign" customModule="IlacRehberim" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="13" width="335" height="109"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-pill-filled-100" translatesAutoresizingMaskIntoConstraints="NO" id="VGs-Yp-70i">
+                                                            <rect key="frame" x="10" y="30" width="50" height="50"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="50" id="gNY-YB-F4l"/>
+                                                                <constraint firstAttribute="height" constant="50" id="kuB-K4-Jgi"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minoset (15mg)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbc-rz-O0q">
+                                                            <rect key="frame" x="80" y="8" width="245" height="24"/>
+                                                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bir sonraki hatırlatma :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDK-LY-4F4">
+                                                            <rect key="frame" x="80" y="32" width="171" height="22"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="22" id="BcW-gR-j2T"/>
+                                                                <constraint firstAttribute="width" constant="171" id="pIy-9Z-iY4"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bugün 13.15" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IFt-Wu-nfR">
+                                                            <rect key="frame" x="80" y="54" width="235" height="15"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="15" id="cex-mM-G0i"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcW-J0-F5V">
+                                                            <rect key="frame" x="80" y="77" width="245" height="21"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="21" id="bVF-dG-lc8"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="13"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstItem="hcW-J0-F5V" firstAttribute="top" secondItem="IFt-Wu-nfR" secondAttribute="bottom" constant="8" id="16v-jM-YUq"/>
+                                                        <constraint firstItem="IFt-Wu-nfR" firstAttribute="leading" secondItem="VGs-Yp-70i" secondAttribute="trailing" constant="20" id="1wh-j0-Aes"/>
+                                                        <constraint firstAttribute="trailing" secondItem="wbc-rz-O0q" secondAttribute="trailing" constant="10" id="5EP-S1-Q9o"/>
+                                                        <constraint firstItem="hcW-J0-F5V" firstAttribute="leading" secondItem="IFt-Wu-nfR" secondAttribute="leading" id="AcP-5I-hFT"/>
+                                                        <constraint firstItem="CDK-LY-4F4" firstAttribute="top" secondItem="wbc-rz-O0q" secondAttribute="bottom" id="MWs-gO-1rR"/>
+                                                        <constraint firstAttribute="height" constant="109" id="Son-3c-s44"/>
+                                                        <constraint firstItem="wbc-rz-O0q" firstAttribute="leading" secondItem="VGs-Yp-70i" secondAttribute="trailing" constant="20" id="akD-4c-Lw7"/>
+                                                        <constraint firstItem="CDK-LY-4F4" firstAttribute="leading" secondItem="VGs-Yp-70i" secondAttribute="trailing" constant="20" id="fHK-mH-8gD"/>
+                                                        <constraint firstAttribute="trailing" secondItem="hcW-J0-F5V" secondAttribute="trailing" constant="10" id="iR2-Lf-Q1e"/>
+                                                        <constraint firstItem="VGs-Yp-70i" firstAttribute="leading" secondItem="HON-Ul-la0" secondAttribute="leading" constant="10" id="ka4-5c-C2S"/>
+                                                        <constraint firstItem="VGs-Yp-70i" firstAttribute="centerY" secondItem="HON-Ul-la0" secondAttribute="centerY" id="m4o-U2-ywK"/>
+                                                        <constraint firstItem="wbc-rz-O0q" firstAttribute="top" secondItem="HON-Ul-la0" secondAttribute="top" constant="8" id="q5D-ll-3hC"/>
+                                                        <constraint firstAttribute="trailing" secondItem="IFt-Wu-nfR" secondAttribute="trailing" constant="20" id="tCP-UA-eBe"/>
+                                                        <constraint firstItem="IFt-Wu-nfR" firstAttribute="top" secondItem="CDK-LY-4F4" secondAttribute="bottom" id="y2N-2c-bRu"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="HON-Ul-la0" firstAttribute="top" secondItem="S4g-zL-lyj" secondAttribute="topMargin" constant="2" id="76P-iY-DNp"/>
+                                                <constraint firstItem="HON-Ul-la0" firstAttribute="leading" secondItem="S4g-zL-lyj" secondAttribute="leadingMargin" constant="5" id="Wx7-fu-BMl"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="HON-Ul-la0" secondAttribute="trailing" constant="5" id="nqW-SC-2ci"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="HON-Ul-la0" secondAttribute="bottom" constant="2" id="vhx-BF-sYD"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.93400424719999997" green="0.96812176699999997" blue="0.99216234680000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <connections>
+                                            <outlet property="medicineImg" destination="VGs-Yp-70i" id="14V-zL-1qj"/>
+                                            <outlet property="nameAndDosage" destination="wbc-rz-O0q" id="2gn-XT-1md"/>
+                                            <outlet property="nextReminder" destination="IFt-Wu-nfR" id="6xh-4c-nYv"/>
+                                            <outlet property="personalNote" destination="hcW-J0-F5V" id="S3R-14-ch5"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J36-r6-WRI">
+                                <rect key="frame" x="0.0" y="597" width="375" height="70"/>
+                                <color key="backgroundColor" red="0.93287324910000002" green="0.49454197290000002" blue="0.19213114680000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Lpb-nR-Q8o"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="IhateComicSans" family="I hate Comic Sans" pointSize="31"/>
+                                <state key="normal" title="Yeni İlaç Ekle">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="MzJ-dh-Zuk" kind="show" id="Os6-9i-JUn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93400424718856812" green="0.96812176704406738" blue="0.99216234683990479" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="8qQ-Tk-TaP" firstAttribute="trailing" secondItem="e6t-zb-zSe" secondAttribute="trailing" id="0nt-5M-vrH"/>
+                            <constraint firstItem="nVg-yF-MTb" firstAttribute="top" secondItem="PS7-o2-V4F" secondAttribute="bottom" constant="8" id="7Qq-WZ-P8N"/>
+                            <constraint firstItem="PS7-o2-V4F" firstAttribute="leading" secondItem="e6t-zb-zSe" secondAttribute="leading" id="Fxp-N3-rz0"/>
+                            <constraint firstItem="PS7-o2-V4F" firstAttribute="trailing" secondItem="e6t-zb-zSe" secondAttribute="trailing" id="OFe-q8-6zW"/>
+                            <constraint firstItem="nVg-yF-MTb" firstAttribute="leading" secondItem="e6t-zb-zSe" secondAttribute="leading" constant="20" id="Twi-3j-4Bl"/>
+                            <constraint firstItem="8qQ-Tk-TaP" firstAttribute="top" secondItem="nVg-yF-MTb" secondAttribute="bottom" constant="8" id="ZTt-Rh-nb3"/>
+                            <constraint firstItem="e6t-zb-zSe" firstAttribute="trailing" secondItem="J36-r6-WRI" secondAttribute="trailing" id="cGW-aY-hkI"/>
+                            <constraint firstItem="PS7-o2-V4F" firstAttribute="top" secondItem="IPX-AT-fRF" secondAttribute="top" id="dqd-WZ-cGd"/>
+                            <constraint firstItem="8qQ-Tk-TaP" firstAttribute="leading" secondItem="e6t-zb-zSe" secondAttribute="leading" id="eHw-xS-fLC"/>
+                            <constraint firstItem="J36-r6-WRI" firstAttribute="top" secondItem="8qQ-Tk-TaP" secondAttribute="bottom" id="pL8-2w-O04"/>
+                            <constraint firstItem="J36-r6-WRI" firstAttribute="leading" secondItem="e6t-zb-zSe" secondAttribute="leading" id="w8z-aZ-Cym"/>
+                            <constraint firstItem="e6t-zb-zSe" firstAttribute="bottom" secondItem="J36-r6-WRI" secondAttribute="bottom" id="yfW-88-iav"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="e6t-zb-zSe"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="8qQ-Tk-TaP" id="sAF-ql-Z8S"/>
+                        <segue destination="JwH-7g-oh8" kind="show" identifier="showDetail" id="E9V-ol-n4W"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignIn" id="dje-xj-SVY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3n6-l6-4ag" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1209" y="53"/>
+        </scene>
+        <!--Add MedicineVC-->
+        <scene sceneID="nLX-ab-3Zy">
+            <objects>
+                <viewController id="MzJ-dh-Zuk" customClass="AddMedicineVC" customModule="IlacRehberim" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3ky-7N-dcz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1oi-H2-7Jn" customClass="ViewDesign" customModule="IlacRehberim" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="377" height="120"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- İLAÇ EKLE -" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJB-eq-2va">
+                                        <rect key="frame" x="72" y="53" width="233" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="Hu6-m7-MjX"/>
+                                            <constraint firstAttribute="width" constant="233" id="t0T-Wt-hpL"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="IhateComicSans" family="I hate Comic Sans" pointSize="29"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYy-fC-ndz">
+                                        <rect key="frame" x="8" y="28" width="74" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="74" id="B0s-kw-48l"/>
+                                            <constraint firstAttribute="height" constant="45" id="eIa-9B-FEe"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="IhateComicSans" family="I hate Comic Sans" pointSize="25"/>
+                                        <state key="normal" title="&lt;GERİ">
+                                            <color key="titleColor" red="0.93287324910000002" green="0.49454197290000002" blue="0.19213114680000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="cXs-4I-tXk" kind="show" id="eY4-vG-OFw"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.29692286252975464" green="0.65153360366821289" blue="0.93337875604629517" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="wJB-eq-2va" firstAttribute="centerX" secondItem="1oi-H2-7Jn" secondAttribute="centerX" id="5fJ-Zj-BMO"/>
+                                    <constraint firstItem="wJB-eq-2va" firstAttribute="centerY" secondItem="1oi-H2-7Jn" secondAttribute="centerY" constant="10" id="Aks-xm-8wP"/>
+                                    <constraint firstAttribute="height" constant="120" id="V4m-b7-TGG"/>
+                                    <constraint firstItem="CYy-fC-ndz" firstAttribute="top" secondItem="1oi-H2-7Jn" secondAttribute="top" constant="28" id="gAL-Gv-2zb"/>
+                                    <constraint firstItem="CYy-fC-ndz" firstAttribute="leading" secondItem="1oi-H2-7Jn" secondAttribute="leading" constant="8" id="xY1-4v-s9Q"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="RRK-zb-In3">
+                                <rect key="frame" x="25" y="170" width="327" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="İlaç İsmi :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zhl-pA-cdy">
+                                        <rect key="frame" x="0.0" y="0.0" width="68" height="20"/>
+                                        <fontDescription key="fontDescription" name="IhateComicSans" family="I hate Comic Sans" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Opy-2v-N9X">
+                                        <rect key="frame" x="78" y="0.0" width="249" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Opy-2v-N9X" secondAttribute="trailing" id="BN4-Us-8tJ"/>
+                                    <constraint firstItem="Zhl-pA-cdy" firstAttribute="leading" secondItem="RRK-zb-In3" secondAttribute="leading" id="p0d-ER-gdF"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="qk6-21-JZC">
+                                <rect key="frame" x="25" y="220" width="190" height="32"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C1i-Ph-0CL">
+                                        <rect key="frame" x="0.0" y="0.0" width="43" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="Wsb-FO-Ez3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="IhateComicSans" family="I hate Comic Sans" pointSize="17"/>
+                                        <state key="normal" title="Şurup"/>
+                                        <connections>
+                                            <action selector="typeLiqTapped:" destination="MzJ-dh-Zuk" eventType="touchUpInside" id="bKO-W0-pc5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iUO-dq-SPC">
+                                        <rect key="frame" x="83" y="0.0" width="107" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="Fuh-xI-ogO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="IhateComicSans" family="I hate Comic Sans" pointSize="17"/>
+                                        <state key="normal" title="Hap veya Tablet"/>
+                                        <connections>
+                                            <action selector="typePillTapped:" destination="MzJ-dh-Zuk" eventType="touchUpInside" id="Jwg-GA-TKQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="0KN-VK-a9o"/>
+                                    <constraint firstAttribute="width" constant="190" id="HSO-TG-dj4"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="uc2-iS-ib9">
+                                <rect key="frame" x="25" y="272" width="232" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="İlac'ın Dozu :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N8w-dA-FEb">
+                                        <rect key="frame" x="0.0" y="0.0" width="86" height="20"/>
+                                        <fontDescription key="fontDescription" name="IhateComicSans" family="I hate Comic Sans" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="b1E-sV-1Fh">
+                                        <rect key="frame" x="95" y="0.0" width="137" height="30"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hKR-gO-PPH">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="E27-ys-zsD"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tane hap/tablet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AO4-Me-kGW">
+                                                <rect key="frame" x="40" y="0.0" width="97" height="30"/>
+                                                <fontDescription key="fontDescription" name="IhateComicSans" family="I hate Comic Sans" pointSize="17"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="N8w-dA-FEb" firstAttribute="leading" secondItem="uc2-iS-ib9" secondAttribute="leading" id="hTz-Fv-1j3"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Ka7-iQ-wNT">
+                                <rect key="frame" x="25" y="322" width="190" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stokdaki İlaç Sayısı :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K79-Sp-vb1">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="QTl-HM-zTz"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="IhateComicSans" family="I hate Comic Sans" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SdV-4C-sbf">
+                                        <rect key="frame" x="150" y="0.0" width="40" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="zMy-qg-Vrh"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="K79-Sp-vb1" firstAttribute="leading" secondItem="Ka7-iQ-wNT" secondAttribute="leading" id="TZw-vW-ddq"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="pyh-QT-pjI">
+                                <rect key="frame" x="25" y="372" width="327" height="32"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="HjR-a9-UyU">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="32"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CmF-vv-0ci">
+                                                <rect key="frame" x="0.0" y="0.0" width="61" height="32"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="32" id="NWM-0R-iq9"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="IhateComicSans" family="I hate Comic Sans" pointSize="17"/>
+                                                <state key="normal" title="Önemsiz"/>
+                                                <connections>
+                                                    <action selector="beforeMealTapped:" destination="MzJ-dh-Zuk" eventType="touchUpInside" id="3Km-kd-Qgg"/>
+                                                    <action selector="noMealTimeTapped:" destination="MzJ-dh-Zuk" eventType="touchUpInside" id="c6T-CL-g6s"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kW1-5g-3ai">
+                                                <rect key="frame" x="91" y="0.0" width="98" height="32"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="32" id="HTZ-uN-DhS"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="IhateComicSans" family="I hate Comic Sans" pointSize="17"/>
+                                                <state key="normal" title="YemektenÖnce"/>
+                                                <connections>
+                                                    <action selector="beforeMealTapped:" destination="MzJ-dh-Zuk" eventType="touchUpInside" id="NzO-U7-SdC"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x7c-32-IJ0">
+                                                <rect key="frame" x="219" y="0.0" width="101" height="32"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="32" id="z6D-90-d1q"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="IhateComicSans" family="I hate Comic Sans" pointSize="17"/>
+                                                <state key="normal" title="YemektenSonra"/>
+                                                <connections>
+                                                    <action selector="afterMealTapped:" destination="MzJ-dh-Zuk" eventType="touchUpInside" id="flc-m8-kwr"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="258" id="sxF-wZ-jAh"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dnS-1k-lPG">
+                                <rect key="frame" x="25" y="414" width="346" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="HD6-bx-7EC"/>
+                                    <constraint firstAttribute="width" constant="344" id="kCC-Gc-aVN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="IhateComicSans" family="I hate Comic Sans" pointSize="17"/>
+                                <state key="normal" title="Ne zamana kadar ilacı almaya devam edeceksin ?"/>
+                                <connections>
+                                    <action selector="datePickerTapped:" destination="MzJ-dh-Zuk" eventType="touchUpInside" id="1sh-EL-p2K"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="45s-z3-SMr">
+                                <rect key="frame" x="25" y="446" width="336" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="qVI-6s-tfa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Bwf-Vn-BJb">
+                                <rect key="frame" x="25" y="474" width="220" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kaç saatte bir alınacak :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f9n-MP-WF4">
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="180" id="EyY-O8-Vp9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="IhateComicSans" family="I hate Comic Sans" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K2X-Rc-Pwr">
+                                        <rect key="frame" x="180" y="0.0" width="40" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="pJY-1J-eY0"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="f9n-MP-WF4" firstAttribute="leading" secondItem="Bwf-Vn-BJb" secondAttribute="leading" id="0az-mR-ZvR"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="lo5-jx-k40">
+                                <rect key="frame" x="25" y="514" width="327" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not eklemek için aşağıya yazın :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0nm-OR-Dfo">
+                                        <rect key="frame" x="0.0" y="0.0" width="327" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="I7G-Nb-1Qn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="IhateComicSans" family="I hate Comic Sans" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VYF-sa-LnS">
+                                        <rect key="frame" x="0.0" y="20" width="327" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="0nm-OR-Dfo" firstAttribute="top" secondItem="lo5-jx-k40" secondAttribute="top" id="De6-09-E1y"/>
+                                    <constraint firstAttribute="trailing" secondItem="0nm-OR-Dfo" secondAttribute="trailing" id="Ev8-dc-Ldy"/>
+                                    <constraint firstItem="0nm-OR-Dfo" firstAttribute="leading" secondItem="lo5-jx-k40" secondAttribute="leading" id="NMG-1p-5CF"/>
+                                    <constraint firstAttribute="trailing" secondItem="VYF-sa-LnS" secondAttribute="trailing" id="hiJ-ux-A9E"/>
+                                    <constraint firstItem="VYF-sa-LnS" firstAttribute="leading" secondItem="lo5-jx-k40" secondAttribute="leading" id="te9-Bm-FOS"/>
+                                </constraints>
+                            </stackView>
+                            <datePicker contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="iiV-iv-Lkw">
+                                <rect key="frame" x="381" y="430" width="375" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="8zm-ym-3v7"/>
+                                    <constraint firstAttribute="width" constant="375" id="nao-Cf-cPC"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="542725248.04238498">
+                                    <!--2018-03-14 13:00:48 +0000-->
+                                </date>
+                                <locale key="locale" localeIdentifier="tr"/>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="86K-Cl-JDc" customClass="ButtonDesign" customModule="IlacRehberim" customModuleProvider="target">
+                                <rect key="frame" x="21" y="592" width="335" height="55"/>
+                                <color key="backgroundColor" red="0.93287324910000002" green="0.49454197290000002" blue="0.19213114680000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="335" id="NdB-dW-SYf"/>
+                                    <constraint firstAttribute="height" constant="55" id="WxP-od-zuu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="IhateComicSans" family="I hate Comic Sans" pointSize="22"/>
+                                <state key="normal" title="İLAÇ EKLE">
+                                    <color key="titleColor" red="0.93400424719999997" green="0.96812176699999997" blue="0.99216234680000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="addMedicineTappedWith_sender:" destination="MzJ-dh-Zuk" eventType="touchUpInside" id="sk0-k2-zaO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zle-ke-Sv2">
+                                <rect key="frame" x="10" y="128" width="357" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="S4u-xg-S9W"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93400424718856812" green="0.96812176704406738" blue="0.99216234683990479" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="dnS-1k-lPG" firstAttribute="top" secondItem="pyh-QT-pjI" secondAttribute="bottom" constant="10" id="0Rx-RO-ydi"/>
+                            <constraint firstItem="dnS-1k-lPG" firstAttribute="leading" secondItem="Alo-h2-fL1" secondAttribute="leading" constant="25" id="1XS-wz-jEa"/>
+                            <constraint firstItem="uc2-iS-ib9" firstAttribute="top" secondItem="qk6-21-JZC" secondAttribute="bottom" constant="20" id="2fv-03-TyG"/>
+                            <constraint firstItem="Alo-h2-fL1" firstAttribute="bottom" secondItem="86K-Cl-JDc" secondAttribute="bottom" constant="20" id="30W-pK-bIR"/>
+                            <constraint firstItem="zle-ke-Sv2" firstAttribute="leading" secondItem="Alo-h2-fL1" secondAttribute="leading" constant="10" id="3fb-lk-HDJ"/>
+                            <constraint firstItem="iiV-iv-Lkw" firstAttribute="centerX" secondItem="3ky-7N-dcz" secondAttribute="centerX" constant="380" id="66L-Sy-QnV"/>
+                            <constraint firstItem="Ka7-iQ-wNT" firstAttribute="leading" secondItem="Alo-h2-fL1" secondAttribute="leading" constant="25" id="6te-Mw-fnN"/>
+                            <constraint firstItem="45s-z3-SMr" firstAttribute="top" secondItem="dnS-1k-lPG" secondAttribute="bottom" id="7Gc-yM-y9Q"/>
+                            <constraint firstItem="1oi-H2-7Jn" firstAttribute="leading" secondItem="Alo-h2-fL1" secondAttribute="leading" id="9H1-hv-q00"/>
+                            <constraint firstItem="Alo-h2-fL1" firstAttribute="trailing" secondItem="dnS-1k-lPG" secondAttribute="trailing" constant="6" id="9p5-hr-pSE"/>
+                            <constraint firstItem="Alo-h2-fL1" firstAttribute="trailing" secondItem="45s-z3-SMr" secondAttribute="trailing" constant="16" id="CsB-wv-061"/>
+                            <constraint firstItem="Alo-h2-fL1" firstAttribute="trailing" secondItem="pyh-QT-pjI" secondAttribute="trailing" constant="25" id="DIc-pR-R7B"/>
+                            <constraint firstItem="lo5-jx-k40" firstAttribute="top" secondItem="Bwf-Vn-BJb" secondAttribute="bottom" constant="10" id="GJZ-1I-xc8"/>
+                            <constraint firstItem="Alo-h2-fL1" firstAttribute="trailing" secondItem="1oi-H2-7Jn" secondAttribute="trailing" id="Lms-yc-iGU"/>
+                            <constraint firstItem="45s-z3-SMr" firstAttribute="leading" secondItem="Alo-h2-fL1" secondAttribute="leading" constant="25" id="RAT-Tw-OHg"/>
+                            <constraint firstItem="Alo-h2-fL1" firstAttribute="trailing" secondItem="RRK-zb-In3" secondAttribute="trailing" constant="25" id="SB9-56-NMT"/>
+                            <constraint firstItem="Ka7-iQ-wNT" firstAttribute="top" secondItem="uc2-iS-ib9" secondAttribute="bottom" constant="20" id="TE9-35-A4p"/>
+                            <constraint firstItem="uc2-iS-ib9" firstAttribute="leading" secondItem="Alo-h2-fL1" secondAttribute="leading" constant="25" id="YnR-RF-oh8"/>
+                            <constraint firstItem="Alo-h2-fL1" firstAttribute="trailing" secondItem="zle-ke-Sv2" secondAttribute="trailing" constant="10" id="Ypu-JT-mH6"/>
+                            <constraint firstItem="pyh-QT-pjI" firstAttribute="leading" secondItem="Alo-h2-fL1" secondAttribute="leading" constant="25" id="agM-D8-hjV"/>
+                            <constraint firstItem="lo5-jx-k40" firstAttribute="leading" secondItem="Alo-h2-fL1" secondAttribute="leading" constant="25" id="crz-Il-Aj2"/>
+                            <constraint firstItem="Bwf-Vn-BJb" firstAttribute="leading" secondItem="Alo-h2-fL1" secondAttribute="leading" constant="25" id="d4c-aA-2MD"/>
+                            <constraint firstItem="qk6-21-JZC" firstAttribute="leading" secondItem="Alo-h2-fL1" secondAttribute="leading" constant="25" id="d5P-vB-Kkt"/>
+                            <constraint firstItem="zle-ke-Sv2" firstAttribute="top" secondItem="1oi-H2-7Jn" secondAttribute="bottom" constant="8" id="fEJ-Pg-1wT"/>
+                            <constraint firstItem="Bwf-Vn-BJb" firstAttribute="top" secondItem="45s-z3-SMr" secondAttribute="bottom" constant="10" id="hQA-k6-q1C"/>
+                            <constraint firstItem="RRK-zb-In3" firstAttribute="top" secondItem="zle-ke-Sv2" secondAttribute="bottom" constant="8" id="jRe-xz-u49"/>
+                            <constraint firstItem="Alo-h2-fL1" firstAttribute="trailing" secondItem="uc2-iS-ib9" secondAttribute="trailing" constant="120" id="k28-nf-CwQ"/>
+                            <constraint firstItem="iiV-iv-Lkw" firstAttribute="top" secondItem="3ky-7N-dcz" secondAttribute="top" constant="430" id="pmB-s9-cfb"/>
+                            <constraint firstItem="86K-Cl-JDc" firstAttribute="centerX" secondItem="3ky-7N-dcz" secondAttribute="centerX" id="pnh-2G-1km"/>
+                            <constraint firstItem="1oi-H2-7Jn" firstAttribute="top" secondItem="3ky-7N-dcz" secondAttribute="top" id="poY-ib-ZHx"/>
+                            <constraint firstItem="pyh-QT-pjI" firstAttribute="top" secondItem="Ka7-iQ-wNT" secondAttribute="bottom" constant="20" id="qLf-9D-qqR"/>
+                            <constraint firstItem="qk6-21-JZC" firstAttribute="top" secondItem="RRK-zb-In3" secondAttribute="bottom" constant="20" id="t8Z-bC-qIt"/>
+                            <constraint firstItem="RRK-zb-In3" firstAttribute="leading" secondItem="Alo-h2-fL1" secondAttribute="leading" constant="25" id="tXm-rV-0ft"/>
+                            <constraint firstItem="Alo-h2-fL1" firstAttribute="trailing" secondItem="lo5-jx-k40" secondAttribute="trailing" constant="25" id="zSE-Qj-FkD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Alo-h2-fL1"/>
+                    </view>
+                    <connections>
+                        <outlet property="afterMealBtn" destination="x7c-32-IJ0" id="Ydr-Cd-HCG"/>
+                        <outlet property="beforeMealBtn" destination="kW1-5g-3ai" id="4bq-pY-43C"/>
+                        <outlet property="dateBtn" destination="dnS-1k-lPG" id="ALc-Wt-nit"/>
+                        <outlet property="dateLbl" destination="45s-z3-SMr" id="EtL-MK-1kH"/>
+                        <outlet property="datePicker" destination="iiV-iv-Lkw" id="ct4-7n-YpR"/>
+                        <outlet property="datePickerConstraint" destination="66L-Sy-QnV" id="R4U-sg-9cv"/>
+                        <outlet property="dosageField" destination="hKR-gO-PPH" id="cq2-cl-EKB"/>
+                        <outlet property="errorLbl" destination="zle-ke-Sv2" id="PHX-5X-Nii"/>
+                        <outlet property="hourField" destination="K2X-Rc-Pwr" id="dth-R5-zLO"/>
+                        <outlet property="hourLbl" destination="f9n-MP-WF4" id="3up-YT-s9G"/>
+                        <outlet property="inStockField" destination="SdV-4C-sbf" id="F28-bX-8sx"/>
+                        <outlet property="nameField" destination="Opy-2v-N9X" id="2GP-Xd-4aC"/>
+                        <outlet property="noMealTimeBtn" destination="CmF-vv-0ci" id="BSt-eK-I8A"/>
+                        <outlet property="personalNoteLbl" destination="0nm-OR-Dfo" id="fm5-Lg-Tha"/>
+                        <outlet property="personalNoteTxtView" destination="VYF-sa-LnS" id="iQl-UU-Rvq"/>
+                        <outlet property="typeLiquid" destination="C1i-Ph-0CL" id="qyF-sw-pnP"/>
+                        <outlet property="typePill" destination="iUO-dq-SPC" id="pOU-yj-hje"/>
+                        <segue destination="cXs-4I-tXk" kind="show" identifier="backToFeed" id="PIR-eZ-GBF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ynq-5f-f8q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2222" y="-313"/>
+        </scene>
+        <!--DetailVC-->
+        <scene sceneID="GAT-dQ-KTv">
+            <objects>
+                <viewController id="JwH-7g-oh8" customClass="DetailVC" customModule="IlacRehberim" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xz0-Ri-V0X">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YW8-Dy-Qzm" customClass="ViewDesign" customModule="IlacRehberim" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- MİNOSET -" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lls-PW-cw1">
+                                        <rect key="frame" x="71" y="57" width="233" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="233" id="2wL-rK-P5M"/>
+                                            <constraint firstAttribute="height" constant="34" id="RME-Ay-vlJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="IhateComicSans" family="I hate Comic Sans" pointSize="29"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.2969228625" green="0.65153360370000002" blue="0.93337875599999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="lls-PW-cw1" firstAttribute="centerX" secondItem="YW8-Dy-Qzm" secondAttribute="centerX" id="Czr-C2-sYH"/>
+                                    <constraint firstAttribute="height" constant="128" id="brN-HI-gNM"/>
+                                    <constraint firstItem="lls-PW-cw1" firstAttribute="centerY" secondItem="YW8-Dy-Qzm" secondAttribute="centerY" constant="10" id="xEf-sw-cSL"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="z8L-Br-e6F">
+                                <rect key="frame" x="25" y="168" width="325" height="20"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="İlacın Dosajı :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbd-pQ-7MM">
+                                        <rect key="frame" x="0.0" y="0.0" width="89" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="89" id="6cb-KS-Mpo"/>
+                                            <constraint firstAttribute="height" constant="20" id="CLp-JW-c9S"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="IhateComicSans" family="I hate Comic Sans" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KZV-uT-DPu">
+                                        <rect key="frame" x="109" y="0.0" width="216" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="aVr-Kc-MxG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="KZV-uT-DPu" firstAttribute="leading" secondItem="bbd-pQ-7MM" secondAttribute="trailing" id="7iO-vP-IBm"/>
+                                    <constraint firstItem="KZV-uT-DPu" firstAttribute="leading" secondItem="bbd-pQ-7MM" secondAttribute="trailing" constant="20" id="8gZ-DE-aCL"/>
+                                    <constraint firstAttribute="trailing" secondItem="KZV-uT-DPu" secondAttribute="trailing" id="NSD-Ka-Uya"/>
+                                    <constraint firstItem="bbd-pQ-7MM" firstAttribute="leading" secondItem="z8L-Br-e6F" secondAttribute="leading" id="Vyh-XY-vVr"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="k1Y-dN-YZ6">
+                                <rect key="frame" x="25" y="218" width="123.5" height="20"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stokta Kalan :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Yb-Jp-Hg9">
+                                        <rect key="frame" x="0.0" y="0.0" width="95" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="95" id="GNv-LO-2DS"/>
+                                            <constraint firstAttribute="height" constant="20" id="xNr-Pj-1fB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="IhateComicSans" family="I hate Comic Sans" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ud6-0r-uOP">
+                                        <rect key="frame" x="115" y="0.0" width="8.5" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="Zzn-HH-YS5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="8Yb-Jp-Hg9" firstAttribute="leading" secondItem="k1Y-dN-YZ6" secondAttribute="leading" id="h2q-1h-h3W"/>
+                                    <constraint firstAttribute="trailing" secondItem="ud6-0r-uOP" secondAttribute="trailing" id="i78-pQ-XsJ"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BEG-sy-cej">
+                                <rect key="frame" x="25" y="268" width="325" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="mox-rf-eA6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="2k3-ha-28b">
+                                <rect key="frame" x="25" y="319" width="320" height="20"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="İlacın Kullanım Süresi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zKw-5a-f4x">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="5T9-iB-VfB"/>
+                                            <constraint firstAttribute="width" constant="150" id="LYy-0O-UVi"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="IhateComicSans" family="I hate Comic Sans" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IJs-eh-zt7">
+                                        <rect key="frame" x="170" y="0.0" width="150" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="Zp0-Xy-x0O"/>
+                                            <constraint firstAttribute="width" constant="150" id="u8m-Sh-MnJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="IJs-eh-zt7" secondAttribute="trailing" id="LGJ-wV-8lL"/>
+                                    <constraint firstItem="IJs-eh-zt7" firstAttribute="leading" secondItem="zKw-5a-f4x" secondAttribute="trailing" id="YrM-7m-BUr"/>
+                                    <constraint firstItem="IJs-eh-zt7" firstAttribute="leading" secondItem="zKw-5a-f4x" secondAttribute="trailing" constant="20" id="heU-xL-zX0"/>
+                                    <constraint firstItem="zKw-5a-f4x" firstAttribute="leading" secondItem="2k3-ha-28b" secondAttribute="leading" id="kGW-6G-vWY"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Ln7-3J-oRN">
+                                <rect key="frame" x="25" y="369" width="325" height="99"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5XP-bx-E5J">
+                                        <rect key="frame" x="0.0" y="0.0" width="37" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="XTr-ct-MKY"/>
+                                            <constraint firstAttribute="width" constant="37" id="eWs-sx-GcO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="IhateComicSans" family="I hate Comic Sans" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Herhangi bir not eklemediniz..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8TG-ZK-uKk">
+                                        <rect key="frame" x="0.0" y="21" width="325" height="78"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="78" id="SZ6-dH-6zI"/>
+                                            <constraint firstAttribute="width" constant="325" id="cos-ny-F2m"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDN-R1-68A">
+                                <rect key="frame" x="16" y="498" width="343" height="92"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="92" id="Hdm-oy-CRN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="IhateComicSans" family="I hate Comic Sans" pointSize="30"/>
+                                <state key="normal" title="&lt; GERİ  "/>
+                                <connections>
+                                    <segue destination="cXs-4I-tXk" kind="show" id="OfK-op-xuq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93400424719999997" green="0.96812176699999997" blue="0.99216234680000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="2k3-ha-28b" firstAttribute="leading" secondItem="WTe-78-88I" secondAttribute="leading" constant="25" id="0QY-Lw-F3V"/>
+                            <constraint firstItem="Ln7-3J-oRN" firstAttribute="leading" secondItem="WTe-78-88I" secondAttribute="leading" constant="25" id="6Dy-f8-cZF"/>
+                            <constraint firstItem="k1Y-dN-YZ6" firstAttribute="leading" secondItem="WTe-78-88I" secondAttribute="leading" constant="25" id="9Bo-4C-DNt"/>
+                            <constraint firstItem="2k3-ha-28b" firstAttribute="top" secondItem="BEG-sy-cej" secondAttribute="bottom" constant="30" id="9Rf-5j-G7e"/>
+                            <constraint firstItem="z8L-Br-e6F" firstAttribute="leading" secondItem="WTe-78-88I" secondAttribute="leading" constant="25" id="DiB-Et-AGA"/>
+                            <constraint firstItem="YW8-Dy-Qzm" firstAttribute="top" secondItem="xz0-Ri-V0X" secondAttribute="top" id="FhB-kU-G0a"/>
+                            <constraint firstItem="WTe-78-88I" firstAttribute="trailing" secondItem="YW8-Dy-Qzm" secondAttribute="trailing" id="FoL-Nl-uug"/>
+                            <constraint firstItem="WTe-78-88I" firstAttribute="trailing" secondItem="Ln7-3J-oRN" secondAttribute="trailing" constant="25" id="OiP-xc-iOD"/>
+                            <constraint firstItem="WTe-78-88I" firstAttribute="trailing" secondItem="BEG-sy-cej" secondAttribute="trailing" constant="25" id="Qhx-My-Yb6"/>
+                            <constraint firstItem="cDN-R1-68A" firstAttribute="top" secondItem="Ln7-3J-oRN" secondAttribute="bottom" constant="30" id="R8l-Ea-g98"/>
+                            <constraint firstItem="WTe-78-88I" firstAttribute="trailing" secondItem="z8L-Br-e6F" secondAttribute="trailing" constant="25" id="RcA-5g-g8G"/>
+                            <constraint firstItem="BEG-sy-cej" firstAttribute="top" secondItem="k1Y-dN-YZ6" secondAttribute="bottom" constant="30" id="a3i-ju-RHS"/>
+                            <constraint firstItem="YW8-Dy-Qzm" firstAttribute="leading" secondItem="WTe-78-88I" secondAttribute="leading" id="aLV-ZE-fKJ"/>
+                            <constraint firstItem="WTe-78-88I" firstAttribute="trailing" secondItem="cDN-R1-68A" secondAttribute="trailing" constant="16" id="cPg-8t-wPV"/>
+                            <constraint firstItem="z8L-Br-e6F" firstAttribute="top" secondItem="YW8-Dy-Qzm" secondAttribute="bottom" constant="40" id="mrG-Wf-W9I"/>
+                            <constraint firstItem="BEG-sy-cej" firstAttribute="leading" secondItem="WTe-78-88I" secondAttribute="leading" constant="25" id="ncQ-vQ-JG8"/>
+                            <constraint firstItem="k1Y-dN-YZ6" firstAttribute="top" secondItem="z8L-Br-e6F" secondAttribute="bottom" constant="30" id="osI-8U-wA8"/>
+                            <constraint firstItem="Ln7-3J-oRN" firstAttribute="top" secondItem="2k3-ha-28b" secondAttribute="bottom" constant="30" id="u1R-C7-i3d"/>
+                            <constraint firstItem="cDN-R1-68A" firstAttribute="leading" secondItem="WTe-78-88I" secondAttribute="leading" constant="16" id="y1q-DP-MY5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WTe-78-88I"/>
+                    </view>
+                    <connections>
+                        <outlet property="dateLbl" destination="IJs-eh-zt7" id="e4E-3n-gHa"/>
+                        <outlet property="dosageLbl" destination="KZV-uT-DPu" id="dsJ-gs-J98"/>
+                        <outlet property="inStcokLbl" destination="ud6-0r-uOP" id="pZX-n7-a6b"/>
+                        <outlet property="mealTimeLbl" destination="BEG-sy-cej" id="jnu-pO-fg5"/>
+                        <outlet property="nameLbl" destination="lls-PW-cw1" id="7bW-P1-oV8"/>
+                        <outlet property="personalNoteLbl" destination="8TG-ZK-uKk" id="Qfq-3Y-bac"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TRm-zx-sA4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2222" y="376"/>
+        </scene>
+        <!--Create UserVC-->
+        <scene sceneID="ubY-gA-2mE">
+            <objects>
+                <viewController id="pBA-qy-Xyq" customClass="CreateUserVC" customModule="IlacRehberim" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ykn-o7-4mI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="YUI-hj-NS1">
+                                <rect key="frame" x="30" y="163" width="315" height="247"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wGT-Nn-Tug">
+                                        <rect key="frame" x="0.0" y="0.0" width="315" height="69"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YxR-wJ-qEK">
+                                                <rect key="frame" x="0.0" y="0.0" width="315" height="29"/>
+                                                <fontDescription key="fontDescription" name="IhateComicSans" family="I hate Comic Sans" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your email..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iMY-CS-mv3" customClass="FieldDesign" customModule="IlacRehberim" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="39" width="315" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" enablesReturnKeyAutomatically="YES" textContentType="email"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="iMY-CS-mv3" firstAttribute="leading" secondItem="wGT-Nn-Tug" secondAttribute="leading" id="USN-J5-HVc"/>
+                                            <constraint firstAttribute="trailing" secondItem="iMY-CS-mv3" secondAttribute="trailing" id="Xrm-iG-f84"/>
+                                            <constraint firstItem="YxR-wJ-qEK" firstAttribute="leading" secondItem="wGT-Nn-Tug" secondAttribute="leading" id="fht-bb-U4b"/>
+                                            <constraint firstAttribute="trailing" secondItem="YxR-wJ-qEK" secondAttribute="trailing" id="wa3-iH-H2k"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="F2Q-A2-Fj5">
+                                        <rect key="frame" x="0.0" y="89" width="315" height="69"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parola Oluştur:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CeZ-GM-7hL">
+                                                <rect key="frame" x="0.0" y="0.0" width="315" height="29"/>
+                                                <fontDescription key="fontDescription" name="IhateComicSans" family="I hate Comic Sans" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Create a password..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cec-uy-ciH" customClass="FieldDesign" customModule="IlacRehberim" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="39" width="315" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" enablesReturnKeyAutomatically="YES" textContentType="email"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="cec-uy-ciH" secondAttribute="trailing" id="Bdr-gJ-rDn"/>
+                                            <constraint firstAttribute="trailing" secondItem="CeZ-GM-7hL" secondAttribute="trailing" id="F2s-Fk-We5"/>
+                                            <constraint firstItem="cec-uy-ciH" firstAttribute="leading" secondItem="F2Q-A2-Fj5" secondAttribute="leading" id="ZaR-Wr-JGi"/>
+                                            <constraint firstItem="CeZ-GM-7hL" firstAttribute="leading" secondItem="F2Q-A2-Fj5" secondAttribute="leading" id="voJ-FR-NBp"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rqN-WK-kX9">
+                                        <rect key="frame" x="0.0" y="178" width="315" height="69"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kullanıcı Adı Oluştur:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BRN-Z8-iKh">
+                                                <rect key="frame" x="0.0" y="0.0" width="315" height="29"/>
+                                                <fontDescription key="fontDescription" name="IhateComicSans" family="I hate Comic Sans" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ReEnter your password..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IQr-yS-1Zh" customClass="FieldDesign" customModule="IlacRehberim" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="39" width="315" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" enablesReturnKeyAutomatically="YES" textContentType="email"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="BRN-Z8-iKh" firstAttribute="leading" secondItem="rqN-WK-kX9" secondAttribute="leading" id="QFy-Oy-M5l"/>
+                                            <constraint firstAttribute="trailing" secondItem="IQr-yS-1Zh" secondAttribute="trailing" id="fkB-Xw-xhJ"/>
+                                            <constraint firstItem="IQr-yS-1Zh" firstAttribute="leading" secondItem="rqN-WK-kX9" secondAttribute="leading" id="m4O-eK-dzw"/>
+                                            <constraint firstAttribute="trailing" secondItem="BRN-Z8-iKh" secondAttribute="trailing" id="rDW-Yp-Esd"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="rqN-WK-kX9" firstAttribute="leading" secondItem="YUI-hj-NS1" secondAttribute="leading" id="1Yd-G3-1AY"/>
+                                    <constraint firstAttribute="trailing" secondItem="F2Q-A2-Fj5" secondAttribute="trailing" id="Fpm-ef-Wt2"/>
+                                    <constraint firstItem="wGT-Nn-Tug" firstAttribute="leading" secondItem="YUI-hj-NS1" secondAttribute="leading" id="H2w-wp-MBT"/>
+                                    <constraint firstAttribute="trailing" secondItem="rqN-WK-kX9" secondAttribute="trailing" id="JTG-kj-hSl"/>
+                                    <constraint firstItem="F2Q-A2-Fj5" firstAttribute="leading" secondItem="YUI-hj-NS1" secondAttribute="leading" id="RTG-kj-oht"/>
+                                    <constraint firstAttribute="trailing" secondItem="wGT-Nn-Tug" secondAttribute="trailing" id="lq6-jF-PAl"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hesap Oluştur" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4BI-vY-Nyy">
+                                <rect key="frame" x="67" y="44" width="240" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="8xp-VY-Fye"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="IhateComicSans" family="I hate Comic Sans" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vac-68-Y17" customClass="ButtonDesign" customModule="IlacRehberim" customModuleProvider="target">
+                                <rect key="frame" x="61" y="470" width="253" height="63"/>
+                                <color key="backgroundColor" red="0.0039215686269999999" green="0.3411764706" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="r8i-xe-Z4e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="IhateComicSans" family="I hate Comic Sans" pointSize="27"/>
+                                <state key="normal" title="Kayıt Ol">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="createUserBtnTapped:" destination="pBA-qy-Xyq" eventType="touchUpInside" id="eOD-VV-obW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DFk-BE-KgO">
+                                <rect key="frame" x="61" y="563" width="253" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="IBV-Zb-7ng"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="KBj-87-67z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
+                                <state key="normal" title="Zaten Üyeyim !"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="qCY-VF-Ys3"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Pv-Kr-4CA">
+                                <rect key="frame" x="25" y="420" width="325" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ejP-YP-S4R"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93400424718856812" green="0.96812176704406738" blue="0.99216234683990479" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="YUI-hj-NS1" firstAttribute="top" secondItem="4BI-vY-Nyy" secondAttribute="bottom" constant="66" id="2N1-pS-fkb"/>
+                            <constraint firstItem="ZZd-5o-tij" firstAttribute="trailing" secondItem="YUI-hj-NS1" secondAttribute="trailing" constant="30" id="6Ib-dK-6N7"/>
+                            <constraint firstItem="Vac-68-Y17" firstAttribute="top" secondItem="7Pv-Kr-4CA" secondAttribute="bottom" constant="20" id="8U4-3D-7yg"/>
+                            <constraint firstItem="7Pv-Kr-4CA" firstAttribute="leading" secondItem="ZZd-5o-tij" secondAttribute="leading" constant="25" id="94S-6I-73B"/>
+                            <constraint firstItem="DFk-BE-KgO" firstAttribute="leading" secondItem="ZZd-5o-tij" secondAttribute="leading" constant="61" id="9r5-dk-VmE"/>
+                            <constraint firstItem="4BI-vY-Nyy" firstAttribute="leading" secondItem="ZZd-5o-tij" secondAttribute="leading" constant="67" id="Ahe-47-hj3"/>
+                            <constraint firstItem="YUI-hj-NS1" firstAttribute="leading" secondItem="ZZd-5o-tij" secondAttribute="leading" constant="30" id="HGn-W4-FuH"/>
+                            <constraint firstItem="Vac-68-Y17" firstAttribute="leading" secondItem="ZZd-5o-tij" secondAttribute="leading" constant="61" id="Kor-Ep-zkE"/>
+                            <constraint firstItem="ZZd-5o-tij" firstAttribute="trailing" secondItem="Vac-68-Y17" secondAttribute="trailing" constant="61" id="TKb-Ab-aR0"/>
+                            <constraint firstItem="ZZd-5o-tij" firstAttribute="trailing" secondItem="4BI-vY-Nyy" secondAttribute="trailing" constant="68" id="XXk-sS-UN6"/>
+                            <constraint firstItem="ZZd-5o-tij" firstAttribute="trailing" secondItem="DFk-BE-KgO" secondAttribute="trailing" constant="61" id="gSC-0X-8la"/>
+                            <constraint firstItem="ZZd-5o-tij" firstAttribute="trailing" secondItem="7Pv-Kr-4CA" secondAttribute="trailing" constant="25" id="lYf-dS-Brf"/>
+                            <constraint firstItem="DFk-BE-KgO" firstAttribute="top" secondItem="Vac-68-Y17" secondAttribute="bottom" constant="30" id="nxj-xk-Ga7"/>
+                            <constraint firstItem="4BI-vY-Nyy" firstAttribute="top" secondItem="ZZd-5o-tij" secondAttribute="top" constant="24" id="q7I-Ny-mdt"/>
+                            <constraint firstItem="7Pv-Kr-4CA" firstAttribute="top" secondItem="YUI-hj-NS1" secondAttribute="bottom" constant="10" id="zKW-Yv-kyN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZZd-5o-tij"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailField" destination="iMY-CS-mv3" id="kkD-X8-CwI"/>
+                        <outlet property="errorLbl" destination="7Pv-Kr-4CA" id="6Mw-aa-PpG"/>
+                        <outlet property="passwordField" destination="cec-uy-ciH" id="wpg-C0-Bvw"/>
+                        <outlet property="usernameField" destination="IQr-yS-1Zh" id="dCz-Km-Hzc"/>
+                        <segue destination="cXs-4I-tXk" kind="show" identifier="goIlacRehberim" id="6Ds-A9-GgC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kyu-SH-ALk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="31" y="787"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icons8-ambulance-filled-500" width="500" height="500"/>
+        <image name="icons8-pill-filled-100" width="100" height="100"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Os6-9i-JUn"/>
+        <segue reference="PIR-eZ-GBF"/>
+        <segue reference="dje-xj-SVY"/>
+    </inferredMetricsTieBreakers>
+</document>

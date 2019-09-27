@@ -1,0 +1,503 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A30121B820558301004DED73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30121B720558301004DED73 /* AppDelegate.swift */; };
+		A30121BA20558301004DED73 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30121B920558301004DED73 /* SignInVC.swift */; };
+		A30121BD20558301004DED73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A30121BB20558301004DED73 /* Main.storyboard */; };
+		A30121BF20558301004DED73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A30121BE20558301004DED73 /* Assets.xcassets */; };
+		A30121C220558301004DED73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A30121C020558301004DED73 /* LaunchScreen.storyboard */; };
+		A30121CE205583AA004DED73 /* Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30121CD205583AA004DED73 /* Medicine.swift */; };
+		A30121D020558A10004DED73 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A30121CF20558A10004DED73 /* GoogleService-Info.plist */; };
+		A317C19F20558B9800E2DB26 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A317C19E20558B9800E2DB26 /* DataService.swift */; };
+		A31DA2BE2059628B0082815D /* CreateUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31DA2BD2059628B0082815D /* CreateUserVC.swift */; };
+		A31DA2C0205969490082815D /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31DA2BF205969490082815D /* FeedVC.swift */; };
+		A31DA2C220596D9D0082815D /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31DA2C120596D9D0082815D /* DetailVC.swift */; };
+		A31DA2C420596DB60082815D /* AddMedicineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31DA2C320596DB60082815D /* AddMedicineVC.swift */; };
+		A326ECEA20564204004AED91 /* ViewDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = A326ECE920564204004AED91 /* ViewDesign.swift */; };
+		A326ECEC20564242004AED91 /* FieldDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = A326ECEB20564242004AED91 /* FieldDesign.swift */; };
+		A384992A205999EE00FE7293 /* MedicineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3849929205999EE00FE7293 /* MedicineCell.swift */; };
+		A3955F432055AA8E00DAA859 /* CONSTANTS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3955F422055AA8E00DAA859 /* CONSTANTS.swift */; };
+		A3E04FEC2055C2740046ABCA /* IHATCS__.TTF in Resources */ = {isa = PBXBuildFile; fileRef = A3E04FEB2055C2740046ABCA /* IHATCS__.TTF */; };
+		A3E04FEE2055C33E0046ABCA /* ButtonDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E04FED2055C33E0046ABCA /* ButtonDesign.swift */; };
+		A3EC7CCB2055A6AC00D5E9EF /* SwiftKeychainWrapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3EC7CCC2055A6AC00D5E9EF /* SwiftKeychainWrapper.framework */; };
+		E48CAEC0748452F1E13FDCD1 /* Pods_IlacRehberim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36621B3C5C2EAEDD54FBF433 /* Pods_IlacRehberim.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0C552891568062CAA84BBC08 /* Pods-IlacRehberim.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IlacRehberim.release.xcconfig"; path = "Pods/Target Support Files/Pods-IlacRehberim/Pods-IlacRehberim.release.xcconfig"; sourceTree = "<group>"; };
+		36621B3C5C2EAEDD54FBF433 /* Pods_IlacRehberim.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IlacRehberim.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		427497B5510BEC5360306D97 /* Pods-IlacRehberim.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IlacRehberim.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IlacRehberim/Pods-IlacRehberim.debug.xcconfig"; sourceTree = "<group>"; };
+		A30121B420558301004DED73 /* IlacRehberim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IlacRehberim.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A30121B720558301004DED73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A30121B920558301004DED73 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		A30121BC20558301004DED73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A30121BE20558301004DED73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A30121C120558301004DED73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A30121C320558301004DED73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A30121CD205583AA004DED73 /* Medicine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medicine.swift; sourceTree = "<group>"; };
+		A30121CF20558A10004DED73 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A317C19E20558B9800E2DB26 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		A31DA2BD2059628B0082815D /* CreateUserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserVC.swift; sourceTree = "<group>"; };
+		A31DA2BF205969490082815D /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		A31DA2C120596D9D0082815D /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		A31DA2C320596DB60082815D /* AddMedicineVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMedicineVC.swift; sourceTree = "<group>"; };
+		A326ECE920564204004AED91 /* ViewDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDesign.swift; sourceTree = "<group>"; };
+		A326ECEB20564242004AED91 /* FieldDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldDesign.swift; sourceTree = "<group>"; };
+		A3849929205999EE00FE7293 /* MedicineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineCell.swift; sourceTree = "<group>"; };
+		A3955F422055AA8E00DAA859 /* CONSTANTS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CONSTANTS.swift; sourceTree = "<group>"; };
+		A3E04FEB2055C2740046ABCA /* IHATCS__.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = IHATCS__.TTF; sourceTree = "<group>"; };
+		A3E04FED2055C33E0046ABCA /* ButtonDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonDesign.swift; sourceTree = "<group>"; };
+		A3EC7CCC2055A6AC00D5E9EF /* SwiftKeychainWrapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftKeychainWrapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A30121B120558300004DED73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3EC7CCB2055A6AC00D5E9EF /* SwiftKeychainWrapper.framework in Frameworks */,
+				E48CAEC0748452F1E13FDCD1 /* Pods_IlacRehberim.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A30121AB20558300004DED73 = {
+			isa = PBXGroup;
+			children = (
+				A3E04FEB2055C2740046ABCA /* IHATCS__.TTF */,
+				A3955F422055AA8E00DAA859 /* CONSTANTS.swift */,
+				A30121B620558301004DED73 /* IlacRehberim */,
+				A30121B520558301004DED73 /* Products */,
+				E2CEA482CA2A1CF91F71CE2E /* Pods */,
+				A556324D040DAF2CD01B5B24 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A30121B520558301004DED73 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A30121B420558301004DED73 /* IlacRehberim.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A30121B620558301004DED73 /* IlacRehberim */ = {
+			isa = PBXGroup;
+			children = (
+				A317C19E20558B9800E2DB26 /* DataService.swift */,
+				A30121C92055832A004DED73 /* Model */,
+				A30121CA2055832E004DED73 /* View */,
+				A30121CB20558332004DED73 /* Controller */,
+				A30121B720558301004DED73 /* AppDelegate.swift */,
+				A30121BB20558301004DED73 /* Main.storyboard */,
+				A30121BE20558301004DED73 /* Assets.xcassets */,
+				A30121C020558301004DED73 /* LaunchScreen.storyboard */,
+				A30121C320558301004DED73 /* Info.plist */,
+				A30121CF20558A10004DED73 /* GoogleService-Info.plist */,
+			);
+			path = IlacRehberim;
+			sourceTree = "<group>";
+		};
+		A30121C92055832A004DED73 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A30121CD205583AA004DED73 /* Medicine.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A30121CA2055832E004DED73 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A3E04FED2055C33E0046ABCA /* ButtonDesign.swift */,
+				A326ECE920564204004AED91 /* ViewDesign.swift */,
+				A326ECEB20564242004AED91 /* FieldDesign.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A30121CB20558332004DED73 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A30121B920558301004DED73 /* SignInVC.swift */,
+				A31DA2BD2059628B0082815D /* CreateUserVC.swift */,
+				A31DA2BF205969490082815D /* FeedVC.swift */,
+				A31DA2C120596D9D0082815D /* DetailVC.swift */,
+				A31DA2C320596DB60082815D /* AddMedicineVC.swift */,
+				A3849929205999EE00FE7293 /* MedicineCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A556324D040DAF2CD01B5B24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3EC7CCC2055A6AC00D5E9EF /* SwiftKeychainWrapper.framework */,
+				36621B3C5C2EAEDD54FBF433 /* Pods_IlacRehberim.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E2CEA482CA2A1CF91F71CE2E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				427497B5510BEC5360306D97 /* Pods-IlacRehberim.debug.xcconfig */,
+				0C552891568062CAA84BBC08 /* Pods-IlacRehberim.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A30121B320558300004DED73 /* IlacRehberim */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A30121C620558301004DED73 /* Build configuration list for PBXNativeTarget "IlacRehberim" */;
+			buildPhases = (
+				061D68DD8B037D2D08B5CBAA /* [CP] Check Pods Manifest.lock */,
+				A30121B020558300004DED73 /* Sources */,
+				A30121B120558300004DED73 /* Frameworks */,
+				A30121B220558300004DED73 /* Resources */,
+				5EAB10C55E612A3341BB915A /* [CP] Embed Pods Frameworks */,
+				E5FFD7CDFA18F9B2A90D5793 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IlacRehberim;
+			productName = IlacRehberim;
+			productReference = A30121B420558301004DED73 /* IlacRehberim.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A30121AC20558300004DED73 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = CuraDevelopment;
+				TargetAttributes = {
+					A30121B320558300004DED73 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = A30121AF20558300004DED73 /* Build configuration list for PBXProject "IlacRehberim" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A30121AB20558300004DED73;
+			productRefGroup = A30121B520558301004DED73 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A30121B320558300004DED73 /* IlacRehberim */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A30121B220558300004DED73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A30121C220558301004DED73 /* LaunchScreen.storyboard in Resources */,
+				A30121D020558A10004DED73 /* GoogleService-Info.plist in Resources */,
+				A3E04FEC2055C2740046ABCA /* IHATCS__.TTF in Resources */,
+				A30121BF20558301004DED73 /* Assets.xcassets in Resources */,
+				A30121BD20558301004DED73 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		061D68DD8B037D2D08B5CBAA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IlacRehberim-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5EAB10C55E612A3341BB915A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IlacRehberim/Pods-IlacRehberim-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IlacRehberim/Pods-IlacRehberim-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5FFD7CDFA18F9B2A90D5793 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IlacRehberim/Pods-IlacRehberim-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A30121B020558300004DED73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A30121BA20558301004DED73 /* SignInVC.swift in Sources */,
+				A30121CE205583AA004DED73 /* Medicine.swift in Sources */,
+				A31DA2C420596DB60082815D /* AddMedicineVC.swift in Sources */,
+				A31DA2C220596D9D0082815D /* DetailVC.swift in Sources */,
+				A384992A205999EE00FE7293 /* MedicineCell.swift in Sources */,
+				A31DA2C0205969490082815D /* FeedVC.swift in Sources */,
+				A326ECEC20564242004AED91 /* FieldDesign.swift in Sources */,
+				A30121B820558301004DED73 /* AppDelegate.swift in Sources */,
+				A3E04FEE2055C33E0046ABCA /* ButtonDesign.swift in Sources */,
+				A326ECEA20564204004AED91 /* ViewDesign.swift in Sources */,
+				A31DA2BE2059628B0082815D /* CreateUserVC.swift in Sources */,
+				A3955F432055AA8E00DAA859 /* CONSTANTS.swift in Sources */,
+				A317C19F20558B9800E2DB26 /* DataService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A30121BB20558301004DED73 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A30121BC20558301004DED73 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A30121C020558301004DED73 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A30121C120558301004DED73 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A30121C420558301004DED73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A30121C520558301004DED73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A30121C720558301004DED73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 427497B5510BEC5360306D97 /* Pods-IlacRehberim.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = EEBPYQ8453;
+				INFOPLIST_FILE = IlacRehberim/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CuraDevelopment.IlacRehberim;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1860de73-d069-404d-a012-af0bf550c247";
+				PROVISIONING_PROFILE_SPECIFIER = newapp28feb;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A30121C820558301004DED73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C552891568062CAA84BBC08 /* Pods-IlacRehberim.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = EEBPYQ8453;
+				INFOPLIST_FILE = IlacRehberim/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CuraDevelopment.IlacRehberim;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1860de73-d069-404d-a012-af0bf550c247";
+				PROVISIONING_PROFILE_SPECIFIER = newapp28feb;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A30121AF20558300004DED73 /* Build configuration list for PBXProject "IlacRehberim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A30121C420558301004DED73 /* Debug */,
+				A30121C520558301004DED73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A30121C620558301004DED73 /* Build configuration list for PBXNativeTarget "IlacRehberim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A30121C720558301004DED73 /* Debug */,
+				A30121C820558301004DED73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A30121AC20558300004DED73 /* Project object */;
+}
